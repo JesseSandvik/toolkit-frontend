@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.hide {
+    font-size: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.offscreen {
+    font-size: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
