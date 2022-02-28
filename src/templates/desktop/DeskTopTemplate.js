@@ -6,10 +6,11 @@ const DesktopTemplate = ({ children }) => {
       <header>
         <div className='item one'>
           <h1>Body Designs</h1>
+          <small>A Living Legacy</small>
         </div>
         <div className='item two'></div>
         <div className='item three'>
-          <button>Sign In</button>
+          <button>Login</button>
         </div>
       </header>
       <main>
