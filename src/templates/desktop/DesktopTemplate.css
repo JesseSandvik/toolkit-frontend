@@ -69,6 +69,7 @@
   border: 3px solid #eae0cc;
   border-radius: 6px;
   color: #eae0cc;
+  cursor: pointer;
   letter-spacing: 0.1rem;
   padding: 0.25rem 0.5rem;
   text-transform: uppercase;
@@ -77,17 +78,17 @@
 .desktop main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr auto 1fr;
-      grid-template-columns: 1fr auto 1fr;
-  -ms-grid-rows: 1fr auto 1fr;
-      grid-template-rows: 1fr auto 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
   grid-column: 1 / -1;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
   padding: 1rem;
 }
 
-.desktop main .item {
+.desktop main .intro {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -106,12 +107,85 @@
   grid-column: 2 / 2;
   -ms-grid-row: 2;
   grid-row: 2 / 2;
-  height: 30vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
   width: 50vw;
+}
+
+.desktop main .dashboard {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.desktop main .dashboard .item {
+  background-color: #b4a6ab60;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.desktop main .dashboard nav {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  grid-row: 1 / -1;
+}
+
+.desktop main .dashboard nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.desktop main .dashboard nav ul li a {
+  background-color: #00000099;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  width: 100%;
+}
+
+.desktop main .dashboard .two {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (minmax(150px, auto))[3];
+      grid-template-columns: repeat(3, minmax(150px, auto));
+  -ms-grid-rows: (minmax(200px, auto))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(200px, auto));
+  grid-auto-flow: dense;
+}
+
+.desktop main .dashboard .two .three {
+  -ms-grid-column: span 3;
+      grid-column-start: span 3;
+}
+
+.desktop main .dashboard .two .seven {
+  -ms-grid-column: span 3;
+      grid-column-start: span 3;
 }
 
 .desktop footer {

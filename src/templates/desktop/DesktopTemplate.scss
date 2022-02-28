@@ -50,6 +50,7 @@
         border: 3px solid $main-text-color;
         border-radius: $global-border-radius/2;
         color: $main-text-color;
+        cursor: pointer;
         letter-spacing: 0.1rem;
         padding: 0.25rem 0.5rem;
         text-transform: uppercase;
@@ -59,13 +60,13 @@
 
   main {
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-column: 1 / -1;
     grid-row: 2 / 2;
     padding: 1rem;
 
-    .item {
+    .intro {
       align-items: center;
       background-color: $glass-bg-color;
       border: 3px solid $main-text-color;
@@ -75,10 +76,67 @@
       flex-direction: column;
       grid-column: 2 / 2;
       grid-row: 2 / 2;
-      height: 30vh;
       justify-content: center;
       text-align: center;
       width: 50vw;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-gap: 1rem;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto;
+
+      .item {
+        background-color: $glass-bg-color;
+        border-radius: $global-border-radius;
+        padding: 1rem;
+      }
+
+      nav {
+        grid-column: 1 / 1;
+        grid-row: 1 / -1;
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+
+          li {
+
+            a {
+              background-color: #00000099;
+              border-radius: $global-border-radius;
+              display: flex;
+              flex-direction: row;
+              margin: 0.5rem 0;
+              padding: 1rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .two {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-columns: repeat(3, minmax(150px, auto));
+          grid-template-rows: repeat(auto-fill, minmax(200px, auto));
+          grid-auto-flow: dense;
+
+          .three {
+            grid-column-start: span 3;
+          }
+
+          .seven {
+            grid-column-start: span 3;
+          }
+      }
     }
   }
 
