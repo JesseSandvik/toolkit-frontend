@@ -61,7 +61,7 @@ body {
             display: flex;
             flex-direction: row;
             justify-content:space-between;
-            padding: 1rem;
+            padding: 0.5rem;
             width: 25vw;
     
             label {
@@ -75,6 +75,11 @@ body {
                 margin: 0;
                 padding: 0 1rem;
             }
+        }
+
+        button {
+            margin: 1rem;
+            padding: 0.25rem;
         }
     }
 }

@@ -76,7 +76,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 25vw;
 }
 
@@ -90,5 +90,10 @@ body {
   border-radius: 12px;
   margin: 0;
   padding: 0 1rem;
+}
+
+.register-form form button {
+  margin: 1rem;
+  padding: 0.25rem;
 }
 /*# sourceMappingURL=global.css.map */

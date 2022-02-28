@@ -1,11 +1,12 @@
-import Register from "./Register";
+import DesktopTemplate from './templates/desktop/DeskTopTemplate';
 import './styles/global/global.css';
 
 function App() {
   return (
-    <main className="App">
-      <Register />
-    </main>
+    <div className="App">
+      <DesktopTemplate>
+      </DesktopTemplate>
+    </div>
   );
 }
 
