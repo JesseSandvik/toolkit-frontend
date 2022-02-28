@@ -1,5 +1,5 @@
 import Register from "./Register";
-import './styles/global.css';
+import './styles/global/global.css';
 
 function App() {
   return (

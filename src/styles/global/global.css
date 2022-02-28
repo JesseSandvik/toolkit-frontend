@@ -1,0 +1,94 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #2f2f2f;
+  color: #eae0cc;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.hide {
+  font-size: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+}
+
+.offscreen {
+  font-size: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+.instructions {
+  background-color: #000;
+  border-radius: 12px;
+  padding: 2rem;
+  position: fixed;
+  -webkit-transform: translate(-4.25%, 15%);
+          transform: translate(-4.25%, 15%);
+  width: 25vw;
+}
+
+.register-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid #eae0cc;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-height: 40vh;
+  margin: 15rem 33rem;
+}
+
+.register-form form .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+  width: 25vw;
+}
+
+.register-form form .item label {
+  margin: 0;
+  padding: 0;
+  width: 10vw;
+}
+
+.register-form form .item input {
+  border-radius: 12px;
+  margin: 0;
+  padding: 0 1rem;
+}
+/*# sourceMappingURL=global.css.map */

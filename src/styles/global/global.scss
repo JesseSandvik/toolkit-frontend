@@ -1,0 +1,80 @@
+@import "../_config.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $main-bg-color;
+    color: $main-text-color;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.hide {
+    font-size: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+.offscreen {
+    font-size: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+.valid {
+    color: green;
+}
+
+.invalid {
+    color: red;
+}
+
+.instructions {
+    background-color: #000;
+    border-radius: $global-border-radius;
+    padding: 2rem;
+    position: fixed;
+    transform: translate(-4.25%, 15%);
+    width: 25vw;
+}
+
+.register-form {
+    align-items:center;
+    border: 5px solid $main-text-color;
+    border-radius: $global-border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 40vh;
+    margin: 15rem 33rem;
+
+    form {
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            padding: 1rem;
+            width: 25vw;
+    
+            label {
+                margin: 0;
+                padding: 0;
+                width: 10vw;
+            }
+    
+            input {
+                border-radius: $global-border-radius;
+                margin: 0;
+                padding: 0 1rem;
+            }
+        }
+    }
+}
