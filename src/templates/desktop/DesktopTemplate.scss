@@ -19,16 +19,19 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1 / -1;
     grid-row: 1 / 1;
-    padding: 1rem;
     z-index: 1;
 
-    .one {
+    .item {
       align-items: center;
       display: flex;
+      justify-content: center;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .one {
       flex-direction: column;
       grid-column: 1 / 1;
-      justify-content: center;
-      text-align: center;
 
       h1 {
         border-bottom: 3px solid $accent-color-two;
@@ -39,11 +42,7 @@
     }
 
     .three {
-      align-items: center;
-      display: flex;
       grid-column: 3 / -1;
-      justify-content: space-evenly;
-      text-align: center;
 
       button {
         background-color: $main-bg-color;
@@ -110,7 +109,7 @@
           li {
 
             a {
-              background-color: #00000099;
+              background-color: $glass-bg;
               border-radius: $global-border-radius;
               display: flex;
               flex-direction: row;
@@ -129,11 +128,12 @@
           grid-template-rows: repeat(auto-fill, minmax(200px, auto));
           grid-auto-flow: dense;
 
-          .three {
+          .item:nth-child(1) {
+            background-color: $glass-bg-active;
             grid-column-start: span 3;
           }
 
-          .seven {
+          .item:nth-child(5) {
             grid-column-start: span 3;
           }
       }

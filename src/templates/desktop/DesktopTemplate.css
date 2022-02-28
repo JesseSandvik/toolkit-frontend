@@ -12,7 +12,7 @@
 }
 
 .desktop header {
-  background-color: #2f2f2f25;
+  background-color: #00000099;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -20,27 +20,30 @@
   grid-column: 1 / -1;
   -ms-grid-row: 1;
   grid-row: 1 / 1;
-  padding: 1rem;
   z-index: 1;
 }
 
-.desktop header .one {
+.desktop header .item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.desktop header .one {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-grid-column: 1;
   grid-column: 1 / 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
 }
 
 .desktop header .one h1 {
@@ -51,17 +54,7 @@
 }
 
 .desktop header .three {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   grid-column: 3 / -1;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  text-align: center;
 }
 
 .desktop header .three button {
@@ -92,7 +85,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #b4a6ab60;
+  background-color: #b4a6ab6b;
   border: 3px solid #eae0cc;
   border-radius: 12px;
   color: #eae0cc;
@@ -127,7 +120,7 @@
 }
 
 .desktop main .dashboard .item {
-  background-color: #b4a6ab60;
+  background-color: #b4a6ab6b;
   border-radius: 12px;
   padding: 1rem;
 }
@@ -178,12 +171,13 @@
   grid-auto-flow: dense;
 }
 
-.desktop main .dashboard .two .three {
+.desktop main .dashboard .two .item:nth-child(1) {
+  background-color: #ddf8e850;
   -ms-grid-column: span 3;
       grid-column-start: span 3;
 }
 
-.desktop main .dashboard .two .seven {
+.desktop main .dashboard .two .item:nth-child(5) {
   -ms-grid-column: span 3;
       grid-column-start: span 3;
 }
