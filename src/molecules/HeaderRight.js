@@ -1,9 +1,9 @@
-
+import LoginButton from "../atoms/buttons/LoginButton";
 
 const HeaderRight = () => {
   return (
     <div className='item three'>
-      <button>Login</button>
+      <LoginButton/>
     </div>
   );
 }
