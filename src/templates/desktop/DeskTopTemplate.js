@@ -1,28 +1,16 @@
+import Footer from '../../organisms/Footer';
+import Header from '../../organisms/Header';
+
 import './DesktopTemplate.css';
 
 const DesktopTemplate = ({ children }) => {
   return (
     <section className="desktop">
-      <header>
-        <div className='item one'>
-          <h1>Body Designs</h1>
-          <small>A Living Legacy</small>
-        </div>
-        <div className='item two'></div>
-        <div className='item three'>
-          <button>Login</button>
-        </div>
-      </header>
+      <Header />
       <main>
         {children}
       </main>
-      <footer>
-        <div className='item one'></div>
-        <div className='item two'>
-          <p>Body Designs &copy; {new Date().getFullYear()}</p>
-        </div>
-        <div className='item three'></div>
-      </footer>
+      <Footer />
     </section>
   );
 }

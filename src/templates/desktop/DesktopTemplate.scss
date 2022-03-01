@@ -91,31 +91,34 @@
       .item {
         background-color: $glass-bg-color;
         border-radius: $global-border-radius;
-        padding: 1rem;
       }
 
-      nav {
+      .sidebar {
         grid-column: 1 / 1;
         grid-row: 1 / -1;
+        width: 200px;
 
-        ul {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          margin: 0;
-          padding: 0;
-          width: 100%;
+        nav {
 
-          li {
-
-            a {
-              background-color: $glass-bg;
-              border-radius: $global-border-radius;
-              display: flex;
-              flex-direction: row;
-              margin: 0.5rem 0;
-              padding: 1rem;
-              width: 100%;
+          ul {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+  
+            li {
+              margin: 0.5rem;
+  
+              a {
+                background-color: $glass-bg;
+                border-radius: $global-border-radius;
+                display: flex;
+                flex-direction: row;
+                padding: 1rem;
+                width: 100%;
+              }
             }
           }
         }

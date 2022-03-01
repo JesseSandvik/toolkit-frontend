@@ -1,21 +1,9 @@
-import { NavLink } from "react-router-dom";
+import Sidebar from "../organisms/Sidebar";
 
 const Dashboard = () => {
   return (
     <section className="dashboard">
-      <nav className="item">
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/appointments">Appointments</NavLink>
-          </li>
-          <li>
-            <NavLink to="/kits">Kits</NavLink>
-          </li>
-        </ul>
-      </nav>
+      <Sidebar />
       <div className="two">
         <div className="item three">
           <h2>Good Evening, Tara!</h2>

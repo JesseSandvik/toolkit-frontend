@@ -122,16 +122,16 @@
 .desktop main .dashboard .item {
   background-color: #b4a6ab6b;
   border-radius: 12px;
-  padding: 1rem;
 }
 
-.desktop main .dashboard nav {
+.desktop main .dashboard .sidebar {
   -ms-grid-column: 1;
   grid-column: 1 / 1;
   grid-row: 1 / -1;
+  width: 200px;
 }
 
-.desktop main .dashboard nav ul {
+.desktop main .dashboard .sidebar nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,7 +145,11 @@
   width: 100%;
 }
 
-.desktop main .dashboard nav ul li a {
+.desktop main .dashboard .sidebar nav ul li {
+  margin: 0.5rem;
+}
+
+.desktop main .dashboard .sidebar nav ul li a {
   background-color: #00000099;
   border-radius: 12px;
   display: -webkit-box;
@@ -155,7 +159,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0.5rem 0;
   padding: 1rem;
   width: 100%;
 }
