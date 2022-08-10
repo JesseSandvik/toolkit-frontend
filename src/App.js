@@ -1,11 +1,15 @@
-import Register from "./Register";
-import './styles/global.css';
+import DesktopTemplate from './templates/desktop/DeskTopTemplate';
+import './styles/global/global.css';
+import HomePage from './pages/HomePage';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
-    <main className="App">
-      <Register />
-    </main>
+    <div className="App">
+      <DesktopTemplate>
+        <Dashboard />
+      </DesktopTemplate>
+    </div>
   );
 }
 

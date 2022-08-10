@@ -1,0 +1,163 @@
+@import '../../styles/config';
+
+.desktop {
+  background-image:
+      linear-gradient(to right,
+      rgba(#000, 0.7),
+      rgba(#000, 1.0)),
+      url('../../images/bd-logo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
+  header {
+    background-color: $glass-bg;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+    z-index: 1;
+
+    .item {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .one {
+      flex-direction: column;
+      grid-column: 1 / 1;
+
+      h1 {
+        border-bottom: 3px solid $accent-color-two;
+        letter-spacing: .1rem;
+        margin: 0;
+        text-transform: capitalize;
+      }
+    }
+
+    .three {
+      grid-column: 3 / -1;
+
+      button {
+        background-color: $main-bg-color;
+        border: 3px solid $main-text-color;
+        border-radius: $global-border-radius/2;
+        color: $main-text-color;
+        cursor: pointer;
+        letter-spacing: 0.1rem;
+        padding: 0.25rem 0.5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column: 1 / -1;
+    grid-row: 2 / 2;
+    padding: 1rem;
+
+    .intro {
+      align-items: center;
+      background-color: $glass-bg-color;
+      border: 3px solid $main-text-color;
+      border-radius: $global-border-radius;
+      color: $main-text-color;
+      display: flex;
+      flex-direction: column;
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;
+      justify-content: center;
+      text-align: center;
+      width: 50vw;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-gap: 1rem;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto;
+
+      .item {
+        background-color: $glass-bg-color;
+        border-radius: $global-border-radius;
+      }
+
+      .sidebar {
+        grid-column: 1 / 1;
+        grid-row: 1 / -1;
+        width: 200px;
+
+        nav {
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+  
+            li {
+              margin: 0.5rem;
+  
+              a {
+                background-color: $glass-bg;
+                border-radius: $global-border-radius;
+                display: flex;
+                flex-direction: row;
+                padding: 1rem;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .two {
+          display: grid;
+          grid-gap: 1rem;
+          grid-template-columns: repeat(3, minmax(150px, auto));
+          grid-template-rows: repeat(auto-fill, minmax(200px, auto));
+          grid-auto-flow: dense;
+
+          .item:nth-child(1) {
+            background-color: $glass-bg-active;
+            grid-column-start: span 3;
+          }
+
+          .item:nth-child(5) {
+            grid-column-start: span 3;
+          }
+      }
+    }
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    padding: 1rem;
+    z-index: 1;
+
+    .two {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      grid-column: 2 / 2;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}

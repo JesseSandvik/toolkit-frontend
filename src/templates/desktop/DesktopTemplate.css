@@ -1,0 +1,214 @@
+.desktop {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(black)), url("../../images/bd-logo.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), black), url("../../images/bd-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.desktop header {
+  background-color: #00000099;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1 / -1;
+  -ms-grid-row: 1;
+  grid-row: 1 / 1;
+  z-index: 1;
+}
+
+.desktop header .item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.desktop header .one {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+}
+
+.desktop header .one h1 {
+  border-bottom: 3px solid #b4a6ab;
+  letter-spacing: .1rem;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.desktop header .three {
+  grid-column: 3 / -1;
+}
+
+.desktop header .three button {
+  background-color: #2f2f2f;
+  border: 3px solid #eae0cc;
+  border-radius: 6px;
+  color: #eae0cc;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.desktop main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-column: 1 / -1;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+  padding: 1rem;
+}
+
+.desktop main .intro {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #b4a6ab6b;
+  border: 3px solid #eae0cc;
+  border-radius: 12px;
+  color: #eae0cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  -ms-grid-row: 2;
+  grid-row: 2 / 2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 50vw;
+}
+
+.desktop main .dashboard {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.desktop main .dashboard .item {
+  background-color: #b4a6ab6b;
+  border-radius: 12px;
+}
+
+.desktop main .dashboard .sidebar {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  grid-row: 1 / -1;
+  width: 200px;
+}
+
+.desktop main .dashboard .sidebar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.desktop main .dashboard .sidebar nav ul li {
+  margin: 0.5rem;
+}
+
+.desktop main .dashboard .sidebar nav ul li a {
+  background-color: #00000099;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem;
+  width: 100%;
+}
+
+.desktop main .dashboard .two {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (minmax(150px, auto))[3];
+      grid-template-columns: repeat(3, minmax(150px, auto));
+  -ms-grid-rows: (minmax(200px, auto))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(200px, auto));
+  grid-auto-flow: dense;
+}
+
+.desktop main .dashboard .two .item:nth-child(1) {
+  background-color: #ddf8e850;
+  -ms-grid-column: span 3;
+      grid-column-start: span 3;
+}
+
+.desktop main .dashboard .two .item:nth-child(5) {
+  -ms-grid-column: span 3;
+      grid-column-start: span 3;
+}
+
+.desktop footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-column: 1 / -1;
+  grid-row: 3 / -1;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.desktop footer .two {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column: 2;
+  grid-column: 2 / 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=DesktopTemplate.css.map */
